@@ -11,22 +11,21 @@ nav {
   border: 5px solid black;
   display: flex;
   align-items: center;
-  background-color: rgb(91, 189, 228);
 }
 
 h1 {
-  background-color: grey;
-  margin-left: 10px;
+  margin: 10px;
+  border: 5px solid orangered;
 }
 
 h2 {
   border: 5px solid teal;
   height: 75px;
-  width: 150px;
+  min-width: 135px;
   text-align: right;
 }
 
-h3 {
+header {
   border: 5px solid grey;
 }
 
@@ -50,12 +49,12 @@ h3 {
 }
 
 #proj1 {
-  flex-grow: 2;
+  flex-grow: 2 0 400px;
   width: 100%;
 }
 
 #proj2 {
-  flex-grow: 1;
+  flex-grow: 1 0 300;
   width: 50%;
 }
 
@@ -69,6 +68,7 @@ footer {
 li {
   list-style: none;
   display: inline;
+  text-decoration: underline;
 }
 
 nav {
@@ -79,6 +79,24 @@ nav {
   border: 2px solid blue;
 }
 
-li {
-  text-decoration: underline;
+footer li {
+  text-decoration: none;
+}
+
+/* #proj1 {
+  background-color: orangered;
+} */
+
+@media screen and (max-width: 400px) {
+  footer,
+  nav {
+    flex-direction: column;
+  }
+  #contact-me {
+    text-align: center;
+  }
+  li {
+    display: block;
+    text-align: center;
+  }
 }
