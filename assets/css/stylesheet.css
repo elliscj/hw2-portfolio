@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  border: 5px solid black;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  border: 5px solid red;
+}
+
+h2 {
+  border: 5px solid teal;
+}
+
+h3 {
+  border: 5px solid grey;
+}
+
+.container {
+  display: flex;
+  border: 2px solid green;
+  margin: 5px;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#proj1 {
+  flex-grow: 2;
+  width: 100%;
+}
+
+#proj2 #proj3 {
+  flex-grow: 1;
+  width: 50%;
+}
+
+footer {
+  display: flex;
+  border: 5px solid black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+#about-me {
+  border: 2px solid blue;
+}
+
+li {
+  text-decoration: underline;
+}
