@@ -54,7 +54,7 @@ header {
 }
 
 #proj2 {
-  flex-grow: 1 0 300;
+  flex-grow: 1 0 300px;
   width: 50%;
 }
 
