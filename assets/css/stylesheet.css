@@ -41,7 +41,7 @@ h3 {
   width: 100%;
 }
 
-#proj2 #proj3 {
+#proj2 {
   flex-grow: 1;
   width: 50%;
 }
@@ -62,7 +62,7 @@ nav {
   justify-content: space-between;
 }
 
-#about-me {
+.about-me {
   border: 2px solid blue;
 }
 
