@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 body {
@@ -11,6 +12,7 @@ nav {
   border: 5px solid black;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
@@ -22,7 +24,8 @@ h2 {
   border: 5px solid teal;
   height: 75px;
   min-width: 135px;
-  text-align: right;
+  text-align: left;
+  margin: 10px;
 }
 
 div {
@@ -38,7 +41,7 @@ div {
 .container1 {
   display: flex;
   border: 5px solid green;
-  margin: 20px;
+  /* margin: 20px; */
   padding: 10px;
   justify-content: space-between;
 }
@@ -67,7 +70,7 @@ div {
 .proj2 {
   flex-grow: 1 1 400px;
   width: 50%;
-  min-height: 100px;
+  min-height: 150px;
 }
 
 footer {
@@ -77,27 +80,23 @@ footer {
   align-items: center;
 }
 
-li {
+nav li {
   list-style: none;
   display: inline;
   text-decoration: underline;
-}
-
-nav {
-  justify-content: space-between;
+  margin-right: 10px;
 }
 
 .about-me {
   border: 2px solid blue;
+  margin: 5px;
 }
 
 footer li {
+  margin: 10px;
   text-decoration: none;
+  display: inline;
 }
-
-/* #proj1 {
-  background-color: orangered;
-} */
 
 @media screen and (max-width: 400px) {
   footer,
