@@ -25,15 +25,22 @@ h2 {
   text-align: right;
 }
 
-header {
+div {
   border: 5px solid grey;
 }
 
-.container1,
-.container2 {
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  border: 10px solid yellow;
+}
+/* flex parent */
+.container1 {
   display: flex;
-  border: 2px solid green;
-  margin: 5px;
+  border: 5px solid green;
+  margin: 20px;
+  padding: 10px;
+  justify-content: space-between;
 }
 
 /* .container2 {
@@ -42,20 +49,25 @@ header {
   margin: 5px;
 } */
 
-.work {
+/* flex parent */
+.projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  /* justify-content: space-between; */
+  /* max-width: 100%; */
+  border: 2px solid salmon;
 }
 
-#proj1 {
-  flex-grow: 2 0 400px;
+.proj1 {
+  flex-grow: 2 1 800px;
   width: 100%;
+  min-height: 150px;
 }
 
-#proj2 {
-  flex-grow: 1 0 300px;
+.proj2 {
+  flex-grow: 1 1 400px;
   width: 50%;
+  min-height: 100px;
 }
 
 footer {
