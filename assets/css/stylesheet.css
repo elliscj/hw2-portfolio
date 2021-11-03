@@ -27,6 +27,14 @@ nav {
   background-image: url("../images/glen-rushton-1z2xffroGzU-unsplash.jpg");
 }
 
+nav li {
+  list-style: none;
+  display: inline;
+  text-decoration: underline;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
 a {
   color: var(--light);
 }
@@ -34,11 +42,9 @@ a {
 h1 {
   font-size: 30px;
   margin: 10px;
-  /* border: 5px solid orangered; */
 }
 
 h2 {
-  /* border: 5px solid teal; */
   height: 75px;
   min-width: 125px;
   text-align: left;
@@ -62,13 +68,11 @@ div {
 .wrapper {
   max-width: 90%;
   margin: 0 auto;
-  /* border: 10px solid yellow; */
 }
-/* flex parent */
+
 .container1 {
   display: flex;
   border: 3px solid var(--dark);
-  /* margin: 20px; */
   padding: 10px;
   justify-content: space-between;
   background-color: var(--cold);
@@ -77,19 +81,9 @@ div {
   align-items: center;
 }
 
-/* .container2 {
-  display: flex;
-  border: 2px solid green;
-  margin: 5px;
-} */
-
-/* flex parent */
 .projects {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
-  /* max-width: 100%; */
-  /* border: 2px solid salmon; */
   font-size: 25px;
 }
 
@@ -105,25 +99,7 @@ div {
   min-height: 150px;
 }
 
-footer {
-  display: flex;
-  border: 3px solid var(--dark);
-  justify-content: space-between;
-  align-items: center;
-  background-image: url("../images/glen-rushton-1z2xffroGzU-unsplash.jpg");
-  color: var(--light);
-}
-
-nav li {
-  list-style: none;
-  display: inline;
-  text-decoration: underline;
-  margin-right: 10px;
-  font-size: 24px;
-}
-
 .about-me {
-  /* border: 2px solid blue; */
   margin: 5px;
   padding-left: 5px;
 }
@@ -139,6 +115,15 @@ nav li {
   align-items: center;
   margin: 10px;
   font-size: 25px;
+}
+
+footer {
+  display: flex;
+  border: 3px solid var(--dark);
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../images/glen-rushton-1z2xffroGzU-unsplash.jpg");
+  color: var(--light);
 }
 
 footer li {
