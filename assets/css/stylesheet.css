@@ -14,24 +14,25 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: rgb(216, 216, 216);
+  background-color: var(--warm);
 }
 
 nav {
-  border: 3px solid rgb(31, 31, 31);
+  border: 3px solid var(--dark);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(69, 83, 114);
+  background-color: var(--cold);
   color: whitesmoke;
   background-image: url("../images/glen-rushton-1z2xffroGzU-unsplash.jpg");
 }
 
 a {
-  color: whitesmoke;
+  color: var(--light);
 }
 
 h1 {
+  font-size: 30px;
   margin: 10px;
   /* border: 5px solid orangered; */
 }
@@ -46,6 +47,7 @@ h2 {
 }
 
 #work {
+  font-size: 30px;
   border: 3px solid var(--dark);
   background-color: var(--cold);
   background-image: url("../images/meritt-thomas-srhw9CoLivM-unsplash.jpg");
@@ -65,13 +67,14 @@ div {
 /* flex parent */
 .container1 {
   display: flex;
-  border: 3px solid rgb(31, 31, 31);
+  border: 3px solid var(--dark);
   /* margin: 20px; */
   padding: 10px;
   justify-content: space-between;
-  background-color: rgb(69, 83, 114);
+  background-color: var(--cold);
   color: whitesmoke;
   font-size: 20px;
+  align-items: center;
 }
 
 /* .container2 {
@@ -87,7 +90,7 @@ div {
   /* justify-content: space-between; */
   /* max-width: 100%; */
   /* border: 2px solid salmon; */
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .proj1 {
@@ -108,7 +111,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-image: url("../images/glen-rushton-1z2xffroGzU-unsplash.jpg");
-  color: rgb(209, 183, 34);
+  color: var(--light);
 }
 
 nav li {
@@ -116,6 +119,7 @@ nav li {
   display: inline;
   text-decoration: underline;
   margin-right: 10px;
+  font-size: 24px;
 }
 
 .about-me {
@@ -125,9 +129,16 @@ nav li {
 }
 
 #about-me {
-  height: 180px;
+  height: 200px;
   background-image: url("../images/Screen\ Shot\ 2021-11-02\ at\ 5.56.33\ PM.png");
   background-position: center;
+}
+
+#contact-me {
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 25px;
 }
 
 footer li {
@@ -135,6 +146,7 @@ footer li {
   text-decoration: none;
   display: inline;
   font-size: 20px;
+  align-items: center;
 }
 
 @media screen and (max-width: 400px) {
