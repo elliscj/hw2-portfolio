@@ -3,47 +3,75 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
+:root {
+  --light: whitesmoke;
+  --dark: rgb(31, 31, 31);
+  --warm: rgb(216, 216, 216);
+  --cold: rgb(69, 83, 114);
+  --blue: rgb(95, 137, 228);
+}
+
 body {
   display: flex;
   flex-direction: column;
+  background-color: rgb(216, 216, 216);
 }
 
 nav {
-  border: 5px solid black;
+  border: 3px solid rgb(31, 31, 31);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: rgb(69, 83, 114);
+  color: whitesmoke;
+  background-image: url("../images/glen-rushton-1z2xffroGzU-unsplash.jpg");
+}
+
+a {
+  color: whitesmoke;
 }
 
 h1 {
   margin: 10px;
-  border: 5px solid orangered;
+  /* border: 5px solid orangered; */
 }
 
 h2 {
-  border: 5px solid teal;
+  /* border: 5px solid teal; */
   height: 75px;
-  min-width: 135px;
+  min-width: 125px;
   text-align: left;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#work {
+  border: 3px solid var(--dark);
+  background-color: var(--cold);
+  background-image: url("../images/meritt-thomas-srhw9CoLivM-unsplash.jpg");
 }
 
 div {
-  border: 5px solid grey;
+  border: 3px solid var(--dark);
+  background-color: var(--cold);
+  color: var(--light);
 }
 
 .wrapper {
   max-width: 90%;
   margin: 0 auto;
-  border: 10px solid yellow;
+  /* border: 10px solid yellow; */
 }
 /* flex parent */
 .container1 {
   display: flex;
-  border: 5px solid green;
+  border: 3px solid rgb(31, 31, 31);
   /* margin: 20px; */
   padding: 10px;
   justify-content: space-between;
+  background-color: rgb(69, 83, 114);
+  color: whitesmoke;
+  font-size: 20px;
 }
 
 /* .container2 {
@@ -58,7 +86,8 @@ div {
   flex-wrap: wrap;
   /* justify-content: space-between; */
   /* max-width: 100%; */
-  border: 2px solid salmon;
+  /* border: 2px solid salmon; */
+  font-size: 20px;
 }
 
 .proj1 {
@@ -75,9 +104,11 @@ div {
 
 footer {
   display: flex;
-  border: 5px solid black;
+  border: 3px solid var(--dark);
   justify-content: space-between;
   align-items: center;
+  background-image: url("../images/glen-rushton-1z2xffroGzU-unsplash.jpg");
+  color: rgb(209, 183, 34);
 }
 
 nav li {
@@ -88,14 +119,22 @@ nav li {
 }
 
 .about-me {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   margin: 5px;
+  padding-left: 5px;
+}
+
+#about-me {
+  height: 180px;
+  background-image: url("../images/Screen\ Shot\ 2021-11-02\ at\ 5.56.33\ PM.png");
+  background-position: center;
 }
 
 footer li {
   margin: 10px;
   text-decoration: none;
   display: inline;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 400px) {
