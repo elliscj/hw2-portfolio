@@ -99,6 +99,21 @@ div {
   min-height: 150px;
 }
 
+#project-1 {
+  background-image: url("../images/craftbeer.jpg");
+}
+
+#project-2 {
+  background-image: url("../images/multi-choice.png");
+}
+#project-2 a {
+  color: black;
+}
+
+#project-3 {
+  background-image: url("../images/weather-radar.png");
+}
+
 .about-me {
   margin: 5px;
   padding-left: 5px;
